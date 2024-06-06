@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIFAR-10 Image Classification</title>
+</head>
+<body>
+    <h1>Welcome to my journey!</h1>
+    <div class="gif-container">
+        <img src="{{ url_for('static', filename='catgif.gif') }}" alt="Cat GIF">
+    </div><br><br>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

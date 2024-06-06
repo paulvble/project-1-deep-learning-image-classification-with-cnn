@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+
+    <div class="gif-container">
+        <img src="{{ url_for('static', filename='goodmorning.gif') }}" alt="Goodmorning GIF">
+    </div><br><br>
+
+    <p>Uploaded Image: {{ filename }}</p>
+    <p>Predicted Class: {{ class_name }}</p>
+    <form action="/" method="get">
+        <button type="submit">Return to Index</button>
+    </form>
+
+</body>
+</html>
